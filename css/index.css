@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap');
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+@import url('./layout.css');
+*{
+    font-family: 'Lora', serif;
+}
+
+a, a:hover, a:active{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.cards{
+    transition: all .3s;
+}
+
+.cards:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px gray;
+}
+
+.infos::before{
+    content: "\f05a   ";
+    padding-right: 10px;
+    font-family: 'Font Awesome 5 Free';
+}
+
+#contactbtn::before{
+    content: "\f0e0   ";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.infos{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    font-weight: 900;
+    line-height: 2;
+}
+
+.infosright{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 2;
+}
+
+.lists{
+    margin-left: 10px;
+    list-style-type: disc;
+}
+
+.bann::before{
+    content: "    - ";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.dark *{
+    color: whitesmoke;
+}
+
+.dark .hover-800:hover, .dark .bg-800{
+    background-color: #262626;
+}
+.dark .bg-700{
+    background-color: #404040;
+}
+.dark .hover-700:hover{
+    background-color: rgb(82, 82, 82);
+}
+.dark .bg-900{
+    background-color: #171717;
+}
+.dark .text-300{
+    color: #f5f5f5;
+}
+.dark .textwhite{
+    color: white;
+}
+.dark .text-100{
+    color: rgb(245, 245, 245);
+}
+.dark .text-400{
+    color: rgb(163, 163, 163);
+}
+.dark .text-200{
+    color: rgb(229, 229, 229);
+}
+.dark .border-700{
+    border-color: rgb(64, 64, 64);
+}

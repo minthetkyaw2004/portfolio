@@ -1,0 +1,159 @@
+@media (max-width: 500px) {
+    body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100% !important;
+    }
+    .banners{
+        flex-direction: column;
+    }
+    .infos{
+        font-size: 16px !important;
+    }
+    .infos::before{
+        content: "\f05a ";
+        padding-right: 5px !important;
+        font-family: 'Font Awesome 5 Free';
+    }
+    .infosright{
+        font-size: 16px !important;
+        text-align: right;
+    }
+    .maincards{
+        flex-direction: column;
+    }
+    .active .preview-circle{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .active .preview-text{
+        font-size: 0.6rem;
+    }
+    .active .previewlabel{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 900px) {
+
+    .nav-links{
+        flex-basis: 70%;
+        margin: auto;
+        justify-content: center;
+    }
+    .nav-links div.flex{
+        margin: 0 1%;
+    }
+    #sideplace .active.preview{
+        margin: 10px;
+        display: inline-block;
+        width: fit-content !important;
+    }
+    #sideplace{
+        margin-top: 20px !important;
+        justify-content: center;
+    }
+    .active .preview-row{
+        width: fit-content !important;
+    }
+    .abouts{
+        flex-direction: column;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.preview{
+    cursor: pointer;
+}
+
+.active.preview{
+    width: 100% !important;
+    height: fit-content;
+}
+.active .preview-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.active .preview-circle{
+    width: 7.2rem;
+    height: 7.2rem;
+}
+.active .preview-detail{
+    display: none;
+}
+.active .preview-text{
+    font-size: 1.2rem;
+}
+
+
+.form-groups{
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-labels{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form-inputs{
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.form-inputs:focus-visible{
+    outline: none;
+}
+
+#contactbtn:hover{
+    background: darkgray;
+    box-shadow: 0px 0px 10px white;
+}
+
+.profiles{
+    filter: invert(30%);
+}
+
+.dark .profiles{
+    filter: invert(70%);
+}
+
+.dark #contactbtn:hover{
+    background: rgb(47, 47, 47);
+    box-shadow: 0px 0px 10px white;
+}
+
+.dark .form-labels{
+    color: rgb(159, 159, 159);
+}
+
+.dark .form-inputs{
+    background-color: rgb(194, 194, 194);
+    color: rgb(52, 52, 52);
+}
+
+#sideplace{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sideplace .preview{
+    width: 50%;
+    justify-content: center;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+}
